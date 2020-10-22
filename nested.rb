@@ -109,6 +109,21 @@ end
 def adding_to_dennis
   # add "Assembly" to Dennis Ritchie's languages array
   # return the entire updated hash
+  programmer_hash = 
+ 		{
+      :grace_hopper => {
+        :known_for => "COBOL",
+        :languages => ["COBOL", "FORTRAN"]
+      },
+      :alan_kay => {
+        :known_for => "Object Orientation",
+        :languages => ["Smalltalk", "LISP"]
+      },
+      :dennis_ritchie => {
+        :known_for => "Unix",
+        :languages => ["C"]
+      }
+    }
   programmer_hash[:dennis_ritchie][:languages].push("Assembly")
   programmer_hash
 end
